@@ -1,0 +1,225 @@
+body{
+    background: linear-gradient(to right, rgb(0, 0, 24) 0%, rgb(7, 2, 67) 100%);
+    background-position: center;
+    background-repeat: none;
+    border: 15px solid rgba(8, 5, 0, 0.697);
+    border-radius: 30px;
+}
+
+.intro{
+    width: 30%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-left: 450px;
+
+    color: white;
+    font-size: large;
+    text-align: center;
+
+    border: 2px solid gold;
+    border-radius: 40px;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBfSwwvyRnWo6VrTsnncFwdCwQ76SQulzySiUzhWatQ&s=10");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 20px;
+}
+.int1{
+    background: rgba(227, 9, 9, 0.85);
+    color: white;
+
+    padding: 15px 25px;
+
+    border: 3px solid gold;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.6);
+
+    font-size: 28px;
+    font-weight: bold;
+
+    transition: all 0.5s ease;
+}
+
+.int1:hover{
+  transform: scale(1.1);
+
+}
+
+
+
+.h1{display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+   background:linear-gradient(to right, rgb(7, 3, 249) 0%, rgb(255, 0, 0) 100%);
+    transition: all 0.2s ease;
+    width: max-content;
+    margin-left: 500px;
+    border: 4px solid orangered;
+    box-shadow:  0 8px 20px rgba(244, 30, 15, 0.6);
+    border-radius: 20px;
+    color: rgb(0, 0, 24);
+    text-decoration:darkcyan wavy;
+}
+
+
+.work{
+    padding: 12px 25px;
+    background-color: rgb(247, 0, 255);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    width: max-content;
+    height: max-content;
+    margin-left: 600px;
+ 
+}
+
+.work:hover,
+.mode:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
+}
+
+.work:active{
+    transform: scale(0.95);
+}
+
+
+.circle{
+    position: fixed;
+    border-radius: 50%;
+    background: rgb(123, 9, 254);
+}
+
+.c1{
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    right: 50px;
+}
+
+.c2{
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+    left: 50px;
+}
+
+.cr{background-color: rgb(175, 157, 243);
+    border: 3px solid rgb(12, 31, 1);
+    border-radius: 10px;
+color: black;
+font-size: larger;
+text-align: center;
+justify-content: center;
+}
+.p{background-color: #000000db;}
+
+
+
+
+.para{
+    background-color: #000000e0;
+    border-radius: 20%;
+   font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.8px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    padding: 15px ;}
+
+    .nav{background: linear-gradient(to right, rgb(249, 156, 94) 0%, rgb(252, 169, 169) 100%);
+    background-size: cover;
+height: 90px;
+margin: 20px;
+border: 3px solid transparent ;
+border-radius: 20px;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+justify-content: center;
+word-spacing: 170px;
+align-content: center;
+padding-left: 70px;
+padding-bottom: 20px;
+z-index: 999;
+
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo{background-color:white;}
+
+
+
+
+a {
+    text-decoration: none;
+    background-color: rgb(251, 138, 97);
+    color: #f5f5f5;
+
+    padding: 12px 25px;
+    border: 5px solid transparent;
+    border-radius: 25px;
+
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: gold;
+
+    border-color: gold;
+    transform: scale(1.1);
+}
+
+.matrix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+}
+
+.nav,
+.hero,
+.about {
+    position: relative;
+    z-index: 10;
+}
+
+.mode{
+  
+   background-color: white;
+   height: 40px;
+   width: 40px;
+  border-radius:50% ;
+scale: 1.7;
+  
+ 
+}
