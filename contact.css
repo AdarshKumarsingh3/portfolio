@@ -7,6 +7,255 @@
     font-size: 1rem;
 }
 
+
+/* =========================================================
+   RESPONSIVE FOUNDATION
+   Add this at the END of your existing CSS
+   ========================================================= */
+
+/* ---------- Global box sizing ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ---------- Prevent oversized elements ---------- */
+
+img,
+video,
+iframe,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  max-width: 100%;
+  font: inherit;
+}
+
+/* ---------- Flexible containers ---------- */
+
+main,
+section,
+.container {
+  max-width: 100%;
+}
+
+/*
+   Only elements that already use these classes
+   become flexible. This avoids unexpectedly changing
+   every div in your website.
+*/
+
+.container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
+}
+
+/* ---------- Prevent long text from breaking layout ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  overflow-wrap: break-word;
+}
+
+/* ---------- Flexible rows ---------- */
+
+.flex-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ---------- Responsive cards ---------- */
+
+.cards,
+.card-container,
+.grid,
+.grid-container {
+  max-width: 100%;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* =========================================================
+   RESPONSIVE TYPOGRAPHY
+   ========================================================= */
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .container {
+    width: min(100% - 32px, 800px);
+  }
+
+  main,
+  section {
+    gap: 16px;
+  }
+
+  /* Prevent common fixed-width elements from overflowing */
+
+  .card,
+  .cards,
+  .box,
+  .content,
+  .container {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  main,
+  section {
+    gap: 12px;
+  }
+
+  /* Stack responsive flex layouts */
+
+  .flex-responsive {
+    flex-direction: column;
+  }
+
+  /* Make common content blocks fit the screen */
+
+  .card,
+  .box,
+  .content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Forms */
+
+  input,
+  textarea,
+  select,
+  button {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  main,
+  section {
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCE ANIMATION FOR USERS WHO PREFER LESS MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+}
+
 body{
     background: linear-gradient(to right, rgb(0, 0, 24) 0%, rgb(7, 2, 67) 100%);
     background-position: center;
